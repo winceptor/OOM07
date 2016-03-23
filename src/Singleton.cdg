@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Singleton">
+  <ClassDiagramComponents>
+    <Class name="Window" package="" visibility="public" xPosition="293.0" yPosition="84.0">
+      <Fields>
+        <Field name="instance" type="Window" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="Window" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Mainclass" package="" visibility="public" xPosition="28.0" yPosition="84.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="has" source="Window" target="Window" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Mainclass" target="Window" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
